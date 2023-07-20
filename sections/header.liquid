@@ -1,4 +1,10 @@
-{% assign main_menu_linklist = linklists[section.settings.menu].links %}
+{% liquid
+  if section.settings.menu.links == blank
+    assign main_menu_linklist = linklist[section.settings.menu].links
+  else
+    assign main_menu_linklist = section.settings.menu.links
+  endif
+%}
 <!-- {{ shop.customer_accounts_enabled }} -->
 <div
   class="relative bg-white"
