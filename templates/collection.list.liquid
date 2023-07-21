@@ -9,7 +9,7 @@
       <a href="{{ product.url | within: collection }}">
         <img
           loading="eager"
-          src="{{ product.featured_image.src | image_url: 'large' }}"
+          src="{{ product.featured_image.src | img_url: 'large' }}"
           alt="{{ product.featured_image.alt | escape }}">
       </a>
     </div>

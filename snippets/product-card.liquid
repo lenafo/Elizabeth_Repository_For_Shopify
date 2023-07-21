@@ -6,7 +6,7 @@
           <img
             class="w-full h-full object-cover transition duration-1000 ease-in-out hover:scale-105 transform"
             loading="eager"
-            src="{{ product.featured_image | image_url: 'medium' }}"
+            src="{{ product.featured_image | img_url: 'medium' }}"
             alt="{{ product.featured_image.alt }}">
         </div>
       {% else %}
